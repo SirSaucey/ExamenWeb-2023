@@ -1,0 +1,46 @@
+{
+    "description": "Het appartement heeft een woonkamer met een open keuken die is uitgerust met moderne apparatuur zoals een magnetron, heteluchtoven, vaatwasser, wasmachine en droger. Er zijn twee slaapkamers, waarvan één met een tweepersoonsbed en de andere met twee eenpersoonsbedden. Er zijn ook twee badkamers met douches, wastafels en toiletten. Het appartement heeft zowel een afgesloten terras als een groot zonnig dakterras. Er zijn enkele speciale voorzieningen beschikbaar, waaronder een gemeenschappelijk zwembad op slechts 20 meter afstand van het appartement. Dit zwembad is alleen toegankelijk voor gasten of eigenaren van het appartement, en er is een speciale badge nodig om toegang te krijgen. Daarnaast is er een parkeerplaats recht tegenover het appartement.",
+    "facilities": [
+        "Living met open keuken",
+        "Microgolf heteluchtoven, vaatwasser, wasmachine en droogkast",
+        "1 slaapkamers met tweepersoonsbed",
+        "1 slaapkamer met 2 eenpersoonsbedden",
+        "2 badkamers met douches, lavabo en toilet",
+        "Afgesloten inpandig terras en groot zonnige dakterras",
+        "Gemeenschappelijk zwembad, alleen toegankelijk voor de gasten of eigenaars (met badge)",
+        "Parking voorzien rechtover het appartement."
+    ],
+    "images": [ 
+        { 
+            "//comment" : "Not working because of Swiper Bundle"
+        },
+        {
+          "url": "img/huis1/FLAM07.jpg",
+          "alt": "placeholder"
+        },
+        {
+          "url": "img/huis1/0857_016_20230320_54_0468-HDR.jpg",
+          "alt": "placeholder"
+        },
+        {
+          "url": "img/huis1/0857_028_20230320_54_0169-HDR-Editar.jpg",
+          "alt": "placeholder"
+        },
+        {
+          "url": "img/huis1/0857_031_20230320_54_0002-HDR.jpg",
+          "alt": "placeholder"
+        },
+        {
+          "url": "img/huis1/0857_037_20230320_54_0319-HDR.jpg",
+          "alt": "placeholder"
+        },
+        {
+          "url": "img/huis1/0857_042_20230320_54_0089-HDR.jpg",
+          "alt": "placeholder"
+        },
+        {
+          "url": "img/huis1/0857_043_20230320_54_0059-HDR.jpg",
+          "alt": "placeholder"
+        }
+      ]
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vakantiehuizen </title>
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="index.html" class="logo"> Logo </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="fa-solid fa-x nav-close-btn"></i>
+                    <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+                    <a href="huur.html" > <i class="fa-solid fa-truck-moving"></i> Huur </a>
+                    <a href="contact.html" class="active"> <i class="fa-solid fa-message"></i> Contact </a>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars nav-menu-btn"></i>
+        </div>
+    </header>
+    <!-- Content Section -->
+    <section class="home hero-section">
+        <div class="container-form">
+            <form id="contact-form" onsubmit="sendEmail(); reset(); return false">
+                <h1> Contact Opnemen </h1>
+              <input type="text" id="name" name="name" placeholder="Uw naam" required>
+              <input type="email" id="email" name="email" placeholder="Uw email" required>
+              <input type="tel" id="phone" name="phone" placeholder="Uw telefoonnummer" required>
+              <textarea id="message" name="message" placeholder="Hoe kunnen we u helpen?" required></textarea>
+        
+              <button type="submit"> Verzenden </button>
+            </form>
+            <div id="status"></div>
+          </div>    
+    </section>
+    <!-- About Section-->
+    <section class="about section">
+        <h2> Over Ons </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Modi suscipit maiores veritatis magnam! 
+            Omnis dolores nesciunt laudantium, sunt libero quas. 
+            Recusandae quidem similique accusantium id deleniti modi illo alias earum esse aut magni quibusdam, atque facilis odio sed repellendus numquam molestiae mollitia! Perspiciatis aut repudiandae, ullam quas dolor nesciunt cumque id libero reiciendis voluptatem vel veritatis corporis deserunt ex maxime labore. Repellat delectus asperiores obcaecati cum. Consequuntur nemo earum quibusdam consequatur? Veritatis harum ipsa ad quasi aliquid laudantium itaque corrupti repellat ex expedita, quod voluptatum ratione inventore incidunt nemo aperiam necessitatibus nisi voluptatibus eaque blanditiis architecto neque impedit atque dolorum?
+        </p>
+        <div class="footer">
+            <a class="company" href="https://github.com/SirSaucey?tab=repositories">
+                Made By SauceForged
+            </a>
+        </div>
+    </section>
+    <!-- Scripts -->
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="script/main.js"></script>
+    <script src="https://kit.fontawesome.com/ea984401d2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("pEeJgr_qCmT3kVY7P");
+    })();
+    </script>
+    <script>
+        function sendEmail() {
+        event.preventDefault();
+    
+        // Get the user input values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+    
+        // Set the parameters for sending the email
+        var params = {
+            from_name: name,
+            from_email: email,
+            phone: phone,
+            message: message
+        };
+    
+        // Send the email using EmailJS
+        emailjs.send('service_linpn4h', 'template_8tvx83m', params)
+            .then(function(response) {
+            alert('Email sent successfully!');
+            document.getElementById("contact-form").reset();
+            }, function(error) {
+            alert('Oops! An error occurred while sending the email.');
+            console.log('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
