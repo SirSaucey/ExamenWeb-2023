@@ -1,6 +1,6 @@
 # Rental Apartments Website
 
-Welcome to the Rental Apartments Website repository! This repository contains the code and resources for the website you have developed as your final exam project for web development in school. Congratulations on reaching this milestone!
+Welcome to the Rental Apartments Website repository! This repository contains the code and resources for the website I have developed as my final exam project for web development in school.
 
 ## Table of Contents
 
